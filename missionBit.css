@@ -1,0 +1,60 @@
+/* properties of the textBox */
+.inTextBox{
+  width: 64%;
+  height: 40%;
+  text-align: left;
+  background-color: black;
+  position: fixed;
+  padding: 10px;
+  left: 18%;
+  display: inline-block;
+  border:10px solid #636888;
+  margin:0 auto;
+}
+
+/* moves images in the slide to the right */
+.floatright {
+    float: right;
+    margin-left: 25px;
+}
+
+/* properties of the image and text inside the slides */
+#imageBox{
+
+  position: relative;
+  bottom: 71px;
+  left:5px;
+  width: 357px;
+  height: 357px;
+}
+#textBox{
+  text-align: left;  
+  font-size: 20px;
+}
+
+/* properties of the buttons, properties on hover, starting locations */
+.buttonTwo {
+  background-color: #0087cc; 
+  box-shadow: 0 5px 0 #006599;
+  border: none;
+  color: white;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 100px;
+}
+.buttonTwo:hover{
+  background-color:#006599;
+  box-shadow: 0 5px 0 black;
+  scale: 1.2;
+  transition: 0.2s;
+}
+
+ #buttons{
+  position: fixed;
+  right:40%;
+  top:65%
+ } 
