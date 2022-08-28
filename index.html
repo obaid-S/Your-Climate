@@ -1,18 +1,18 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Your Climate</title>
-  <script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.js"></script>
   <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="page">
 
   <script src="script.js"></script>
-  
+
   <div id='title'>
     <h1>Your Climate</h1>
   </div>
@@ -34,171 +34,137 @@
       Climate Change
     </h1>
   </div>
-  
+
+
+<div id="wrapper">
+  <div class="infoBox" id="one"><h2 style="text-align: center;" id="boxTextOne">What is climate change?</h2></div>
+  <div class="infoBox" id="two"><h2 style="text-align: center;" id="boxTextTwo">The effects</h2></div>
+</div>
   <!-- rows -->
-  <div class="row">
-    <div id="box1" class="infoBox column" >
-         <h2 style="text-align: center;" id="boxTextOne">What is climate change?</h2>
-    </div>
-      <div id="box2" class="infoBox column" >
-         <h2 style="text-align: center;" id="boxTextTwo">The effects</h2>
-    </div>
-  </div>
+  
   <div>
     
-  <div class="infoBox" id="box3">   
-    <h2>See the changes</h2>
+  <div id="box3">   
+    <h2>The Change</h2>
     </div>
-    <div>
-    <canvas id="tchart" style="display: none;"  ></canvas>
-    </div>
+    <div id='chartBorder' style="border-width: 0px; background-color: #29293d00;">
+    <canvas id="tchart" style="display: none;"></canvas>
+    <p id='chartInfo' style="display: none;" > The chart above shows the temperature anomalies of the world. Seeing such a large data set from over a hundred years ago to today really shows the effects of climate change, it shows us that the temperatures are steadily rising and if something doesn't change, they will continue to rise. Data from <a href="https://climate.nasa.gov/vital-signs/global-temperature/" target="_blank" style="color: cyan;"">Nasa</a>. </p>
   </div>
-  
-  <div id='surveyHeader' >   
-    <h2>Check Your Contribution!</h2>
+  </div>
+
+  <div id='surveyHeader'>
+    <h2 >Check Your Contribution!</h2>
   </div>
   <form id="form">
- 
- <div class="form-control">
-    <label>
+
+    <div class="form-control">
+      <label>
         How energy efficient is your home?
-    </label>
+      </label>
 
-    <!-- Input Type Radio Button -->
-    <label for="question1-a">
-        <input type="radio"
-               id="question1-a"
-               name="question1">Above average</input>
-    </label>
-    <label for="question1-b">
-        <input type="radio"
-               id="question1-b"
-               name="question1">Average</input>
-    </label>
-    <label for="question1-c">
-        <input type="radio"
-               id="question1-c"
-               name="question1">Below average</input>
-    </label>
-</div>
-     <div class="form-control">
-    <label>
+      <!-- Input Type Radio Button -->
+      <label for="question1-a">
+        <input type="radio" id="question1-a" name="question1">Above average</input>
+      </label>
+      <label for="question1-b">
+        <input type="radio" id="question1-b" name="question1">Average</input>
+      </label>
+      <label for="question1-c">
+        <input type="radio" id="question1-c" name="question1">Below average</input>
+      </label>
+    </div>
+    <div class="form-control">
+      <label>
         On average, how many miles do you drive a week?
-    </label>
+      </label>
 
-    <!-- Input Type Radio Button -->
-    <label for="question2-a">
-        <input type="radio"
-               id="question2-a"
-               name="question2">Less than 150 miles</input>
-    </label>
-    <label for="question2-b">
-        <input type="radio"
-               id="question2-b"
-               name="question2">Less than 350 miles</input>
-    </label>
-    <label for="question2-c">
-        <input type="radio"
-               id="question2-c"
-               name="question2">More than 350 miles</input>
-    </label>
-</div>    
-<div class="form-control">
-    <label>
+      <!-- Input Type Radio Button -->
+      <label for="question2-a">
+        <input type="radio" id="question2-a" name="question2">Less than 150 miles</input>
+      </label>
+      <label for="question2-b">
+        <input type="radio" id="question2-b" name="question2">Less than 350 miles</input>
+      </label>
+      <label for="question2-c">
+        <input type="radio" id="question2-c" name="question2">More than 350 miles</input>
+      </label>
+    </div>
+    <div class="form-control">
+      <label>
         On average, how many hours do you fly each decade?
-    </label>
+      </label>
 
-    <!-- Input Type Radio Button -->
-    <label for="question3-a">
-        <input type="radio"
-               id="question3-a"
-               name="question3">Less than 25 hours</input>
-    </label>
-    <label for="question3-b">
-        <input type="radio"
-               id="question3-b"
-               name="question3">Less than 75 hours</input>
-    </label>
-    <label for="question3-c">
-        <input type="radio"
-               id="question3-c"
-               name="question3">More than 75 hours</input>
-    </label>
-</div>
- <div class="form-control">
-    <label>
+      <!-- Input Type Radio Button -->
+      <label for="question3-a">
+        <input type="radio" id="question3-a" name="question3">Less than 25 hours</input>
+      </label>
+      <label for="question3-b">
+        <input type="radio" id="question3-b" name="question3">Less than 75 hours</input>
+      </label>
+      <label for="question3-c">
+        <input type="radio" id="question3-c" name="question3">More than 75 hours</input>
+      </label>
+    </div>
+    <div class="form-control">
+      <label>
         On average, how many times do you use public transportation over a personal vehicle per week?
-    </label>
+      </label>
 
-    <!-- Input Type Radio Button -->
-    <label for="question4-a">
-        <input type="radio"
-               id="question4-a"
-               name="question4">More Than Two Times</input>
-    </label>
-    <label for="question4-b">
-        <input type="radio"
-               id="question4-b"
-               name="question4">Less Than Two Times</input>
-    </label>
-    <label for="question4-c">
-        <input type="radio"
-               id="question4-c"
-               name="question4">Zero Times</input>
-    </label>
-</div>   
-  <div class="form-control">
-    <label>
+      <!-- Input Type Radio Button -->
+      <label for="question4-a">
+        <input type="radio" id="question4-a" name="question4">More Than Two Times</input>
+      </label>
+      <label for="question4-b">
+        <input type="radio" id="question4-b" name="question4">Less Than Two Times</input>
+      </label>
+      <label for="question4-c">
+        <input type="radio" id="question4-c" name="question4">Zero Times</input>
+      </label>
+    </div>
+    <div class="form-control">
+      <label>
         How much garbage do you generally produce compared to your neighbors?
-    </label>
+      </label>
 
-    <!-- Input Type Radio Button -->
-    <label for="question5-a">
-        <input type="radio"
-               id="question5-a"
-               name="question5">Less</input>
-    </label>
-    <label for="question5-b">
-        <input type="radio"
-               id="question5-b"
-               name="question5">Same</input>
-    </label>
-    <label for="question5-c">
-        <input type="radio"
-               id="question5-c"
-               name="question5">More</input>
-    </label>
-</div>  
-
-  
-        <!-- Multi-line Text Input Control -->
-        <button type="button" id="buttonSubmit" value="submit">
-            Get Results
-        </button>
-    </form>
-  
-<div>
-  <p id='results'></p>
-</div>
-
- 
-
-  
+      <!-- Input Type Radio Button -->
+      <label for="question5-a">
+        <input type="radio" id="question5-a" name="question5">Less</input>
+      </label>
+      <label for="question5-b">
+        <input type="radio" id="question5-b" name="question5">Same</input>
+      </label>
+      <label for="question5-c">
+        <input type="radio" id="question5-c" name="question5">More</input>
+      </label>
+    </div>
 
 
-  
+    <!-- Multi-line Text Input Control -->
+    <button type="button" id="buttonSubmit" value="submit">
+      Get Results
+    </button>
+  </form>
 
-  
-    
+  <div>
+    <p id='results'></p>
+  </div>
 
- <!--
+
+
+
+
+
+
+
+
+
+  <!--
 This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
 -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
-  <script src="index.js" ></script> 
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <script src="index.js"></script>
 </body>
 
 
 </html>
-
-

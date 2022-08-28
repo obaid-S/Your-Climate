@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Your Climate</title>
   <link href="index.css" rel="stylesheet" type="text/css" />
   <link href="game.css" rel="stylesheet" type="text/css" />
 </head>
@@ -13,7 +13,7 @@
   <div id='title'>
     <h1>Your Climate</h1>
   </div>
-    <div class='navBar' style="border: white 1px inset; margin-bottom: 51px;"'>
+  <div class='navBar' style="border: white 1px inset; margin-bottom: 51px;"'>
     <div class="navItems">
       <a href="index.html" class="navText">Info</a>
     </div>
@@ -26,28 +26,33 @@
     </div>
 <!--   <canvas id="canvas" style="border:5px solid white; text-align: center;">
 </canvas> -->
-    
+    <h2>Pick one of the two images that helps the environment or has less of an impact on it than the other.</h2>
     <h1 class="score">Score: 0</h1>
-    <div class = "start">
-    <button onClick="startGame()">Start!</button>
+  <div class=' start'>
+    <button id="button" onClick="startGame()">Start!</button>
+  </div>
+  <div class="game">
+    <div class="column"> 
+    <img src="" id="option_1" />
     </div>
-    <div class="game">
-    <img src="" id="option_1"/> 
-    <img src="" id="option_2"/> 
-      
+    <div class="column"> 
+    <img src="" id="option_2" />
     </div>
-    </div>
+  </div>
+
+  <div>
+    <p id="game_response"> </p>
+  </div>
+
   
   <script src="script.js"></script>
- 
 
- <!--
+
+  <!--
 This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
 -->
-<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
-<script src="game.js" ></script> 
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <script src="game.js"></script>
 </body>
 
 </html>
-
-

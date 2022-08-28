@@ -95,32 +95,55 @@ canvas {
 
 .row {
   display: flex;
+  border: 10px black solid;
 }
 /* Create two equal columns that sits next to each other */
-.column {
-  justify-content: center;
-  margin:10px;
-  flex: 50%;
-  padding: 10px;
-  
+#wrapper {
+  margin: 5%;
+  display: flex;
+  height: 100px;
+}
 
+#one {
+  width: 45%;
+  margin-right: 5%;
+  border: 10px #636888 solid;
+  
+}
+
+#two {
+  width: 45%;
+  margin-left: 5%;
+  border: 10px #636888 solid;
+  
 }
 
 .infoBox{
   word-wrap: break-word;
   text-align: center;
   display: flex;
+  justify-content: center;
+  border: solid #636888 10px;
+  padding: 10px;
+}
+.infoBox:hover{
+  background: black;
+}
+
+#box3{
+  word-wrap: break-word;
+  text-align: center;
+  display: flex;
   margin: 5%;
   justify-content: center;
   border: solid #636888 10px;
-} 
-
-
-
-.infoBox:hover{
-  background: black;
-  
+  padding: 10px;
 }
+#box3:hover{
+  background: black;
+}
+
+
 
 
 
@@ -179,6 +202,17 @@ button and Checkbox */
   justify-content: center;
   border: solid #636888 10px;
 } 
+#chartBorder{
+  align-content: center;
+  margin-right: 20%;
+  margin-left: 20%;
+  background-color: #29293d;
+  border: 10px solid black ;
+  padding: 20px;
+}
+#chartInfo{
+  text-align: center;
+}
 #results{
   font-size: 20px;
   text-align: center;
@@ -188,21 +222,6 @@ button and Checkbox */
   border: solid #636888 10px;
   padding: 50px;
 }
-
-/* Styling Button */
-button {
-    background-color: #05c46b;
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    font-size: 21px;
-    display: block;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    padding: 200px;
-}
-
 
 /* properties of the buttons, properties on hover, starting locations */
 #buttonSubmit {
@@ -216,6 +235,7 @@ button {
   display: inline-block;
   font-size: 20px;
   border-radius: 5px;
+  width: 100%;
 
 }
 #buttonSubmit:hover{
